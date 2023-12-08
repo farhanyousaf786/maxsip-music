@@ -7,13 +7,13 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #000967;
   padding: 20px 10px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -25,6 +25,8 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  color: #000000;
+  
 }
 
 .header a:hover {
@@ -41,14 +43,4 @@ body {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
+

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
+import logoImage from '../assets/logo.png'; // Replace 'logo.png' with your image file
+
 
 const Header = () => {
 
@@ -8,9 +10,12 @@ const Header = () => {
 
     <div>
       <div class="header">
-        <a href="#default" class="logo">
-          Maxsip Telecom
-        </a>
+      <a href="#default" className="logo">
+    <img  style={{
+        height: 50,
+        width: 150,
+    }} src={logoImage} alt="Song Redemption" />
+  </a>
         <div class="header-right">
           <Link to={"/"} class="about-button">
             Home

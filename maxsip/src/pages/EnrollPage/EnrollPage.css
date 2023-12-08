@@ -1,15 +1,22 @@
-.landing-page-container {
+.input-container {
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   
-  .input-container {
-    margin-bottom: 10px;
+  .input-container label {
+    margin-right: 10px;
+    font-size: 18px;
   }
   
+  .input-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Adjust the width as needed */
+  }
   .btn {
     padding: 10px 20px;
     border: none;
@@ -18,9 +25,19 @@
     color: white;
     cursor: pointer;
     font-size: 16px;
+    align-self: center;
+
   }
-  
-  .btn:hover {
-    background-color: #0056b3;
+
+  .landing-page-container{
+    padding-top: 60px;
   }
-  
+
+  .song-text{
+
+    text-align: center;
+    font-size: 35px;
+    color: #0f007d;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }

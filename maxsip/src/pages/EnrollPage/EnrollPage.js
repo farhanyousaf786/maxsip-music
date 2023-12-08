@@ -38,6 +38,8 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page-container">
+
+      <div className="song-text" >Song redemption</div>
       <div className="input-container">
         <label>Email: </label>
         <input
@@ -47,16 +49,16 @@ const LandingPage = () => {
         />
       </div>
       <div className="input-container">
-        <label>Username: </label>
+        <label>User: </label>
         <input
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <button className="btn" onClick={handleClick}>
-        Get URL
-      </button>
+      <center><button className="btn" onClick={handleClick}>
+        Submit
+      </button></center>
     </div>
   );
 };
