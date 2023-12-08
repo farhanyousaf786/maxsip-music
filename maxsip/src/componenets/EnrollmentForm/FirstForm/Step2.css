@@ -1,0 +1,161 @@
+/*
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group-title {
+    margin-bottom: 15px;
+    
+  }
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  width: 100%;
+}
+
+.form-group input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #d1d1d1;
+  cursor: not-allowed;
+}
+
+
+
+.house-city-text-form{
+
+  padding-bottom: 10px;
+
+}
+
+.email-phone{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+*/
+
+
+
+.email-padding{
+
+padding-right: 20px;
+
+}
+
+@media (min-width: 1000px) {
+
+  .email-phone{
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .address-input input{
+
+width: 500px;
+
+  }
+
+  .house-city-text-form{ 
+
+    margin: 0;
+    font-weight: bold;
+    margin-right: 50px;
+    width: 900px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .house-street-city{
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .house-street-city > div {
+    padding-right: 20px; /* Add this to apply 20px padding to each div inside .house-street-city */
+  }
+
+
+  .state-zip{
+    display: flex;
+    padding-right: 310px;
+  }
+
+  .state-zip > div {
+    padding-right: 20px; /* Add this to apply 20px padding to each div inside .house-street-city */
+  }
+
+
+
+.email-phone{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.city-input input[type="text"] {
+  width: 150px; /* Set width to 200px for the SSN input field */
+  padding-left: 5px; 
+}
+
+.state-input input[type="text"] {
+  width: 70px; /* Set width to 200px for the SSN input field */
+  padding-left: 5px; 
+}
+.zip-input input[type="text"] {
+  width: 100px; /* Set width to 200px for the SSN input field */
+  padding-left: 5px; 
+}
+
+
+
+
+}
+

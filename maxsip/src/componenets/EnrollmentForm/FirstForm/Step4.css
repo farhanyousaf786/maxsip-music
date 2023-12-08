@@ -1,0 +1,116 @@
+/* Step4.css */
+
+.step4-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    max-height: 60vh; /* Set the maximum height to 60% of the viewport height */
+    overflow: auto; 
+  }
+  
+  .lines-container {
+    margin-bottom: 20px;
+  }
+  
+  .line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  span {
+    flex: 1;
+  }
+  
+  .full-name-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center; /* Center the input horizontally */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  .signature-container {
+    margin-bottom: 20px;
+  }
+  
+  .signature-line {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold; /* Added bold font weight */
+  }
+  
+  .submit-container {
+    text-align: center;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  .checkbox-container {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #c5c1c1; /* Grey fill color */
+    margin-right: 5%;
+    margin-bottom: 2%;
+    color: #aaa9a9;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    opacity: 0; /* Hide the default checkbox */
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #555; /* Change background color when checked */
+  }
+  
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #b8b5b5; /* White checkbox color */
+  }
+
+  .check-all-line {
+    font-weight: bold;
+    color: #000; /* Black color for the text */
+    margin-bottom: 10px;
+  }
+  
+  .gray-text {
+    color: #888; /* Gray color for the text */
+  }
+  
+  .check-all-line small {
+    font-size: 80%;
+  }

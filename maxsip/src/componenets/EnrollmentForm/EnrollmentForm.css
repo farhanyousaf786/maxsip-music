@@ -1,0 +1,161 @@
+ /* Large Devices, Wide Screens */
+ @media only screen and (min-width : 1200px) {
+  
+
+  #title {
+    background-image: url("https://imgur.com/4qF9KGb.png");
+    z-index:2;
+  }
+  
+  #title h1 {
+   transform: translateZ(.25px) scale(.75);
+   transform-origin: 50% 100%;
+  }
+
+  .enrollment-form{
+  padding-top: 80px;
+  margin:  auto;
+  width: 70%;
+}
+
+.grid-container {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      /* background-color: #2196F3; */
+      padding: 5px;
+      border-radius: 20px;
+      column-gap: 30px;
+      row-gap: 30px;
+
+  }
+
+.top-text {
+    color:rgb(2, 0, 54);
+    font-family: "Alata";
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+  .enrollment-form{
+    padding-top: 80px;
+    margin:  auto;
+    width: 70%;
+  
+}
+
+.grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        /* background-color: #2196F3; */
+        padding: 5px;
+        border-radius: 20px;
+        column-gap: 30px;
+        row-gap: 30px;
+      
+    }
+  
+.top-text {
+      color:rgb(2, 0, 54);
+      font-family: "Alata";
+      padding-top: 100px;
+      padding-bottom: 30px;
+      font-size: 30px;
+      }
+
+
+}
+
+
+
+
+/* Tablets iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px){
+  .enrollment-form{
+    padding-top: 30px;
+    margin:  auto;
+    width: 70%;
+}
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  /* background-color: #2196F3; */
+  padding: 5px;
+  border-radius: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
+
+}
+.grid-container {
+  padding: 5px;
+
+}
+.top-text {
+
+    color:rgb(2, 0, 54);
+    font-family: "Alata";
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    }
+
+
+}
+  
+
+
+/* Low resolution Tablets and iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .enrollment-form{
+    padding-top: 30px;
+    margin:  auto;
+    width: 70%;
+}
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  /* background-color: #2196F3; */
+  padding: 5px;
+  border-radius: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
+
+}
+.grid-container {
+  padding: 5px;
+
+}
+.top-text {
+
+    color:rgb(2, 0, 54);
+    font-family: "Alata";
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    }
+
+  
+}
+      
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .enrollment-form{
+    padding-top: 10px;
+    margin:  auto;
+    width: 55%;
+}
+
+.top-text {
+    color:rgb(2, 0, 54);
+    font-family: "Alata";
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    }
+
+}

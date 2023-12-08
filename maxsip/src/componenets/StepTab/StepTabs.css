@@ -1,0 +1,40 @@
+/* StepTabs.css */
+
+.step-tabs {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+  
+  .step-tabs-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .step-tabs button {
+    background-color: transparent; /* Transparent background */
+    color: #12264F;
+    border: none; /* Remove the border */
+    border-radius: 0; /* Remove the border radius */
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none; 
+    border-radius: 10px;/* Remove the default button outline on click */
+  }
+  
+  .step-tabs button:hover {
+    background-color: #12264F;
+    color: #fff;
+  }
+  
+  /* Active tab or current tab style */
+  .step-tabs button.active {
+    background-color: #12264F;
+    color: #fff;
+  }
+  
+  
