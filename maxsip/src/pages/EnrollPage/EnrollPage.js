@@ -1,38 +1,62 @@
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import FirstForm from "../../componenets/EnrollmentForm/FirstForm/FirstForm";
-
-// const LandingPage = () => {
-
-//   return (
-//         <FirstForm/>
-//   );
-// };
-
-// export default LandingPage;
 import React, { useState } from "react";
 import axios from "axios";
+import "./EnrollPage.css";
+
 
 const LandingPage = () => {
   const [url, setUrl] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
 
   const handleClick = async () => {
-    const response = await axios.get("/authenticate", 
-     // Add this line to include the current URL as the callback URL
-    );
-    console.log(response); // Assuming response.data contains the API response
+    try {
+      console.log(email);
+      console.log(username);
 
+      const response = await axios.get(
+        "/authenticate",
+        {
+          params: {
+            email: email,
+            user: username,
+          },
+        }
+      );
+
+      console.log(response.data.url);
+
+      if (response.data.url) {
+        window.open(response.data.url, "_blank"); // Open received URL in a new tab
+      } else {
+        console.log("URL not found in response");
+      }
+    } catch (error) {
+      console.error("Error fetching URL:", error);
+    }
   };
 
+
   return (
-    <div>
-      <button onClick={handleClick}>Get URL</button>
-      {url && (
-        <div>
-          <p>Received URL:</p>
-          <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
-        </div>
-      )}
+    <div className="landing-page-container">
+      <div className="input-container">
+        <label>Email: </label>
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <div className="input-container">
+        <label>Username: </label>
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </div>
+      <button className="btn" onClick={handleClick}>
+        Get URL
+      </button>
     </div>
   );
 };
